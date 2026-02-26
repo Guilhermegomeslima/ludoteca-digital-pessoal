@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Ludoteca Digital | Fabinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Minha Ludoteca</h1>
+            <p>Catálogo de jogos, análises e estatísticas pessoais.</p>
+        </div>
+        <button id="theme-toggle" class="btn-theme">☀️ Modo Claro</button>
+    </header>
+
+    <main>
+        <section class="dashboard-container">
+            <div class="stat-card">
+                <h3>Total Filtrado</h3>
+                <p id="stat-total">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Média do Filtro</h3>
+                <p id="stat-media">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Plataforma Dominante</h3>
+                <p id="stat-plataforma">-</p>
+            </div>
+        </section>
+
+        <section class="controles-container">
+            <div class="controles-linha-1">
+                <input type="text" id="busca-input" placeholder="Pesquisar por título...">
+                
+                <select id="ordenacao-select">
+                    <option value="notaDesc">Maior Nota</option>
+                    <option value="notaAsc">Menor Nota</option>
+                    <option value="anoDesc">Mais Recentes (Lançamento)</option>
+                    <option value="anoAsc">Mais Antigos (Lançamento)</option>
+                    <option value="tempoDesc">Mais Tempo Jogado</option>
+                    <option value="conquistasDesc">Maior % de Conquistas</option>
+                </select>
+
+                <button id="btn-roleta" class="btn-roleta">🎲 Roleta Russa</button>
+            </div>
+
+            <div class="filtros-botoes" id="filtros-container">
+                </div>
+        </section>
+
+        <section id="jogos-grid" class="grid-container"></section>
+    </main>
+
+    <div id="modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="fechar-modal" class="close-btn">&times;</button>
+            
+            <div class="modal-body">
+                <div class="modal-esquerda">
+                    <img id="modal-capa" src="" alt="Capa do Jogo">
+                    <div id="modal-tempo-jogo" class="tempo-jogo"></div>
+                    <div id="modal-conquistas-container"></div>
+                    
+                    <div id="modal-audio-container"></div>
+                    <div id="modal-links" class="lojas-links"></div>
+                </div>
+                
+                <div class="modal-direita">
+                    <h2 id="modal-titulo">Título do Jogo</h2>
+                    
+                    <div class="modal-metadata">
+                        <span id="modal-status" class="status-badge"></span>
+                        <p><strong>Plataforma:</strong> <span id="modal-plataforma"></span></p>
+                        <p><strong>Desenvolvedora:</strong> <span id="modal-dev"></span></p>
+                        <p><strong>Gênero:</strong> <span id="modal-genero"></span></p>
+                        <p><strong>Lançamento:</strong> <span id="modal-ano"></span></p>
+                    </div>
+
+                    <div class="nota-final-destaque">
+                        Nota: <span id="modal-nota-final"></span>
+                    </div>
+
+                    <div class="atributos-container"></div>
+                    <div id="modal-anotacoes"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Minha Ludoteca Digital. Desenvolvido por GuilhermeGL_Dev.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/guilherme.glmg?igsh=dHJ6aHZwMTJyOTN2" target="_blank">Instagram</a>
+            <a href="https://linktr.ee/guilhermegl.sites" target="_blank">Linktree</a>
+            <a href="https://github.com/Guilhermegomeslima" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/guilhermegomes-dev" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
