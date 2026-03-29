@@ -100,7 +100,8 @@ const bibliotecaJogos = [
     { titulo: "Tony Hawk's Underground 2", desenvolvedora: "Neversoft", ano: 2004, genero: "Esportes", plataforma: "PS2", tempoJogo: "Campanha finalizada", conquistas: null, notas: { mecanica: 87, enredo: 85, estetica: 86, retencao: 85, feeling: 89 }, notaFinal: 86.4 },
     { titulo: "Shadow of the colossus", desenvolvedora: "Team Ico", ano: 2005, genero: "Ação / Aventura", plataforma: "PS2", tempoJogo: "Poucas horas", conquistas: null, notas: { mecanica: 90, enredo: 84, estetica: 88, retencao: 81, feeling: 88 }, notaFinal: 86.2 },
     { titulo: "Toy story 3", desenvolvedora: "Avalanche Software", ano: 2010, genero: "Plataforma", plataforma: "PS2", tempoJogo: "Campanha finalizada", conquistas: null, notas: { mecanica: 81, enredo: 83, estetica: 84, retencao: 80, feeling: 80 }, notaFinal: 81.6 },
-    { titulo: "Sleeping Dogs Definitive Edition", desenvolvedora: "United Front Games", ano: 2014, genero: "Ação / Aventura", status: "Jogando", plataforma: "PC (Steam)", tempoJogo: "3,2h", conquistas: {obtidas: 5, total: 59}, notas: {mecanica: 88, enredo: 87, estetica: 90, retencao: 86, feeling: 88}, notaFinal: 87.2}
+    { titulo: "Sleeping Dogs Definitive Edition", desenvolvedora: "United Front Games", ano: 2014, genero: "Ação / Aventura", status: "Jogando", plataforma: "PC (Steam)", tempoJogo: "3,2h", conquistas: {obtidas: 5, total: 59}, notas: {mecanica: 88, enredo: 87, estetica: 90, retencao: 86, feeling: 88}, notaFinal: 87.2},
+    { titulo: "Splinter Cell Blacklist", desenvolvedora: "Ubisoft", ano: 2013, genero: "Stealth", status: "Jogando", plataforma: "PC (Steam)", tempoJogo: "4,4h", conquistas: {obtidas: 4, total: 28}, notas: {mecanica: 93, enredo: 87, estetica: 87, retencao: 84, feeling: 85}, notaFinal: 87.2}
 ];
 
 bibliotecaJogos.forEach(jogo => {
